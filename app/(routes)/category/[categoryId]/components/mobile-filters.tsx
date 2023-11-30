@@ -33,7 +33,7 @@ const MobileFilters: React.FC<MobileFiltersProps> = ({
             icon={<FilterIcon size={22} className="text-white" />}
           />
         </SheetTrigger>
-        <SheetContent className="h-[70%]  rounded-t-3xl overflow-y-auto" side="bottom">
+        <SheetContent overlayClassName="bg-black/80 dark:bg-white/80" className="h-[70%]  rounded-t-3xl overflow-y-auto" side="bottom">
           <SheetHeader>
             <SheetTitle>Filters</SheetTitle>
           </SheetHeader>
