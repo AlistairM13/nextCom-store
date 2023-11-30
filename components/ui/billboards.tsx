@@ -15,6 +15,7 @@ const Billboards: React.FC<BillboardProps> = ({
     <Carousel
       showArrows={false}
       showStatus={false}
+      showThumbs={false}
       infiniteLoop={data.length > 1 ? true : false}
       showIndicators={false}
       autoPlay={true}
