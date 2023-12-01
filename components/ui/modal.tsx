@@ -22,7 +22,7 @@ export const Modal: React.FC<ModalProps> = ({
 
     return (
         <Dialog  open={isOpen} onOpenChange={onChange}>
-            <DialogContent overlayClassName="bg-black/80 dark:bg-white/80">
+            <DialogContent overlayClassName="bg-black/80">
                 <div>{children}</div>
             </DialogContent>
         </Dialog>

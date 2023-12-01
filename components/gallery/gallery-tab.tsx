@@ -20,6 +20,7 @@ const GalleryTab: React.FC<GalleryTabProps> = ({
           <span className="absolute h-full w-full aspect-square inset-0 overflow-hidden rounded-md">
             <NextImage
               fill
+              sizes="100%"
               src={image.url}
               alt=""
               className="object-cover object-center"
@@ -27,8 +28,8 @@ const GalleryTab: React.FC<GalleryTabProps> = ({
           </span>
           <span
             className={cn(
-              'absolute inset-0 rounded-md ring-2 ring-offset-2',
-              selected ? 'ring-black' : 'ring-transparent',
+              'absolute inset-0 rounded-md ring-2',
+              selected ? 'ring-black dark:ring-white' : 'ring-transparent',
             )}
           />
         </div>

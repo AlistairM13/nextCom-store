@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { Button, ButtonProps } from "./button";
 
 interface IconButtonProps extends ButtonProps {
-  onClick?: MouseEventHandler<HTMLButtonElement> | undefined;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   icon: React.ReactElement;
   className?: string;
 }
@@ -18,10 +18,10 @@ const IconButton: React.FC<IconButtonProps> = ({
 }) => {
   return (
     <Button
-      variant={props.variant?props.variant:"outline"}
+      variant="outline"
       onClick={onClick}
       className={cn(
-        'rounded-full flex items-center justify-center bg-white border shadow-md p-2 hover:scale-110 transition',
+        'rounded-full flex items-center justify-center bg-white text-black border shadow-md p-2 hover:scale-110 transition',
         className
       )}
       {...props}

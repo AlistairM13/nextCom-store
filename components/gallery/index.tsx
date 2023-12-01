@@ -29,6 +29,7 @@ const Gallery: React.FC<GalleryProps> = ({
                         <div className="aspect-square relative h-full w-full sm:rounded-lg overflow-hidden">
                             <NextImage
                                 fill
+                                sizes="100%"
                                 src={image.url}
                                 alt="Image"
                                 className="object-cover object-center"
